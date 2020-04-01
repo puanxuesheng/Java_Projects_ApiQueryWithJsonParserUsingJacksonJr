@@ -19,6 +19,12 @@ public class JacksonJsonParser {
 //        List<QueryResultBean> test = JSON.std.listOfFrom(QueryResultBean.class,in);
 //        return test;
         StackItems items = JSON.std.beanFrom(StackItems.class, in);
+        
+        
+                //This is example for Jackson
+//        ObjectMapper mapper = new ObjectMapper();
+//        StackItems items = mapper.readValue(in,StackItems.class);
+        
         return items.getItems();
     }
 }
